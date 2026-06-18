@@ -15,7 +15,7 @@ import os
 
 def daily_health_check():
     response = requests.post(
-        'https://rckoycauuwzdryvkjpac.supabase.co/functions/v1/adsroid',
+        'https://api.adsroid.com/agent',
         headers={
             'Authorization': f'Bearer {os.environ["ADSROID_API_KEY"]}',
             'Content-Type': 'application/json'
