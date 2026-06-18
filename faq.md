@@ -173,7 +173,7 @@ See [Using Adsroid with Zapier](https://adsroid.com/api/using-adsroid-with-zapie
 
 Yes. Use n8n's HTTP Request node to call the Adsroid API directly. Configure:
 - Method: POST
-- URL: `https://rckoycauuwzdryvkjpac.supabase.co/functions/v1/adsroid`
+- URL: `https://api.adsroid.com/agent`
 - Headers: Authorization + Content-Type
 - Body: JSON with org ID, project ID, message
 
