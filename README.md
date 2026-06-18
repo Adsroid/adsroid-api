@@ -136,7 +136,7 @@ Navigate to Settings → API Key to generate your credentials. You'll need:
 ### 3. Make Your First Request
 
 ```bash
-curl -X POST https://rckoycauuwzdryvkjpac.supabase.co/functions/v1/adsroid \
+curl -X POST https://api.adsroid.com/agent \
   -H "Authorization: Bearer YOUR_API_KEY" \
   -H "Content-Type: application/json" \
   -d '{
