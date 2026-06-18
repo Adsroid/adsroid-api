@@ -49,7 +49,7 @@ from datetime import datetime
 import json
 
 # Configuration
-ADSROID_API_URL = 'https://rckoycauuwzdryvkjpac.supabase.co/functions/v1/adsroid'
+ADSROID_API_URL = 'https://api.adsroid.com/agent'
 ADSROID_API_KEY = os.environ['ADSROID_API_KEY']
 ORG_ID = os.environ['ADSROID_ORG_ID']
 PROJECT_ID = os.environ['ADSROID_PROJECT_ID']
