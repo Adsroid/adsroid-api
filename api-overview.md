@@ -13,7 +13,7 @@ Adsroid's API is designed around three principles:
 ## Base URL
 
 ```
-https://rckoycauuwzdryvkjpac.supabase.co/functions/v1/adsroid
+https://api.adsroid.com/agent
 ```
 
 All requests use `POST` method with JSON payloads.
@@ -64,7 +64,7 @@ Organizations can have multiple projects, each with different connected accounts
 ### Complete Example
 
 ```bash
-curl -X POST https://rckoycauuwzdryvkjpac.supabase.co/functions/v1/adsroid \
+curl -X POST https://api.adsroid.com/agent \
   -H "Authorization: Bearer adr_b80101ab-xxxx-xxxx-xxxx-xxxxxxxxxxxx" \
   -H "Content-Type: application/json" \
   -d '{
@@ -248,7 +248,7 @@ import requests
 import os
 
 response = requests.post(
-    'https://rckoycauuwzdryvkjpac.supabase.co/functions/v1/adsroid',
+    'https://api.adsroid.com/agent',
     headers={
         'Authorization': f'Bearer {os.environ["ADSROID_API_KEY"]}',
         'Content-Type': 'application/json'
@@ -271,7 +271,7 @@ if response.status_code == 200:
 
 ```javascript
 async function getAdsroidInsights() {
-  const response = await fetch('https://rckoycauuwzdryvkjpac.supabase.co/functions/v1/adsroid', {
+  const response = await fetch('https://api.adsroid.com/agent', {
     method: 'POST',
     headers: {
       'Authorization': `Bearer ${process.env.ADSROID_API_KEY}`,
